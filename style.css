@@ -8,8 +8,8 @@
 }
 
 body{
-  background:linear-gradient(135deg, #e0e5ee, #838a96);
-  color:#333;
+  background: linear-gradient(135deg, #253c66cf, #196eff);
+  color:#000
   overflow-x:hidden;
 }
 
@@ -22,8 +22,45 @@ body{
   border:1px solid rgba(255,255,255,0.3);
   box-shadow:0 15px 40px rgba(0,0,0,0.08);
 }
+/* Slider Navigation Buttons */
+.prev, .next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  font-size: 22px;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: 0.3s ease;
+  z-index: 10;
+}
 
+/* Left Button */
+.prev {
+  left: 10px;
+}
 
+/* Right Button */
+.next {
+  right: 10px;
+}
+
+/* Hover Effect */
+.prev:hover, .next:hover {
+  background: rgba(0, 123, 255, 0.9);
+  transform: translateY(-50%) scale(1.1);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .prev, .next {
+    padding: 10px 14px;
+    font-size: 18px;
+  }
+}
 /* Navbar */
 .navbar {
   position: fixed;
@@ -40,11 +77,19 @@ body{
   box-shadow: 0 5px 20px rgba(0,0,0,0.05);
   z-index: 1000;
 }
+.section glass span{
+  justify-content: end;
+}
+.edu-card h3 {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 .navbar nav a{
   margin-left:25px;
   text-decoration:none;
-  color:#333;
+  color:#000;
   font-weight:500;
   transition:.3s;
 }
@@ -59,7 +104,7 @@ body{
   justify-content: space-between;
   align-items: center;
   padding:  0px 50px;
-  background: #d1cfde;
+  background: #d1cfde00;;
   min-height: 100vh;
   border-radius: 50px;
   
@@ -72,7 +117,7 @@ body{
 
 .intro-text {
   font-size: 18px;
-  color: #75708a;
+  color: #ffffff;
   margin-bottom: 15px;
   font-weight: 600;
 }
@@ -80,7 +125,7 @@ body{
 .main-name {
   font-size: 70px;
   font-weight: 800;
-  color: #1d1d1f;
+  color: #113582;
   line-height: 1.1;
   margin-bottom: 25px;
 }
@@ -88,7 +133,7 @@ body{
 /* Role Badge */
 .role-badge {
   display: inline-block;
-  background: linear-gradient(135deg, #8d93a0, #a7a9af);
+  background: linear-gradient(135deg, #4473d9, #001e79);
   color: white;
   padding: 12px 25px;
   border-radius: 10px;
@@ -110,7 +155,7 @@ body{
   position: absolute;
   width: 450px;
   height: 450px;
-  background: linear-gradient(135deg, #8d93a0, #d7dde68a);
+     background: linear-gradient(135deg, #5885e6, #031037c4);
   border-radius: 50%;
 }
 
@@ -284,7 +329,7 @@ body{
 }
 .skill-box h3 i {
   margin-right: 8px;
-  color: #75708a;
+  color: #352189;
 }
 
 .skill-box ul li {
@@ -297,7 +342,7 @@ body{
 }
 
 .skill-box ul li i {
-  color: #75708a;
+  color: #352189;
   min-width: 20px;
 }
 
@@ -343,7 +388,7 @@ body{
 
 .achievement-header i {
   font-size: 22px;
-  color: #75708a;;
+  color: #352189;
 }
 
 .achievement-header h3 {
@@ -355,7 +400,7 @@ body{
 /* Description */
 .achievement-card p {
   font-size: 14px;
-  color: #444;
+  color: #000;
   margin-bottom: 15px;
   line-height: 1.6;
 }
@@ -414,19 +459,19 @@ body{
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 12px;
-  color: #111;
+  color: #002775;
 }
 
 .project-card p {
   font-size: 14px;
-  color: #555;
+  color: #000;
   margin-bottom: 20px;
   line-height: 1.6;
 }
 
 .project-links a {
   text-decoration: none;
-  background: #6b46c1;
+  background: #05389d;
   color: white;
   padding: 8px 18px;
   border-radius: 20px;
